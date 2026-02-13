@@ -120,7 +120,7 @@ int main() {
 
   // Validação
   if (opcao_1 < 1 || opcao_1 > 7) {
-    printf("\n❌ Opção inválida! Encerrando.\n");
+    printf("\n Opção inválida! Encerrando.\n");
     return 1;
   }
 
@@ -178,11 +178,11 @@ int main() {
   printf("\n>> %s\n", 
     vencedor_1 == 1 ? "✓ Carta 1 venceu!" : 
     vencedor_1 == 2 ? "✓ Carta 2 venceu!" : 
-    "⚖️  Empate!");
+    "Empate!");
 
   // Lógica aninhada: Decidir se precisa de segundo atributo
   if (vencedor_1 == 0) {
-    printf("\n⚠️  Empate detectado! É obrigatório escolher um SEGUNDO atributo.\n");
+    printf("\n  Empate detectado! É obrigatório escolher um SEGUNDO atributo.\n");
   } else {
     printf("\nDeseja comparar um SEGUNDO atributo? (1=Sim, 0=Não): ");
     int continuar;
@@ -190,7 +190,7 @@ int main() {
     
     if (continuar != 1) {
       printf("\n================================\n");
-      printf("🏆 VENCEDOR FINAL: %s\n", vencedor_1 == 1 ? city_name_01 : city_name_02);
+      printf("VENCEDOR FINAL: %s\n", vencedor_1 == 1 ? city_name_01 : city_name_02);
       printf("================================\n");
       return 0;
     }
@@ -213,10 +213,10 @@ int main() {
 
   // Validação da segunda escolha
   if (opcao_2 < 1 || opcao_2 > 7) {
-    printf("\n❌ Opção inválida! Usando apenas a primeira comparação.\n");
+    printf("\n Opção inválida! Usando apenas a primeira comparação.\n");
     vencedor_final = vencedor_1;
   } else if (opcao_2 == opcao_1) {
-    printf("\n⚠️  Mesmo atributo! Usando apenas a primeira comparação.\n");
+    printf("\n  Mesmo atributo! Usando apenas a primeira comparação.\n");
     vencedor_final = vencedor_1;
   } else {
     // Segunda comparação
@@ -300,9 +300,9 @@ int main() {
 
   // Resultado final
   printf("\n================================\n");
-  printf("%s\n", vencedor_final == 0 ? "🤝 RESULTADO: EMPATE!" :
-                 vencedor_final == 1 ? "🏆 VENCEDOR: " :
-                 "🏆 VENCEDOR: ");
+  printf("%s\n", vencedor_final == 0 ? "RESULTADO: EMPATE!" :
+                 vencedor_final == 1 ? "VENCEDOR: " :
+                 "VENCEDOR: ");
   
   if (vencedor_final == 1) {
     printf("%s\n", city_name_01);
