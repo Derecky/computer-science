@@ -249,6 +249,7 @@ Brief overview of the topic.
 
 
 <!-- ████████████████████ -->
+<!-- ░░░░░░░░░░░░░░░░░░░░ -->
 <!-- 🔄 📅-->
 ```
 Semester 2026.1  ░░░░░░░░░░░░░░░░░░░░  000% 🔄
@@ -271,6 +272,10 @@ This repository is licensed under the [MIT License](LICENSE).
 
 ---
 
-<p align="center">
-  Made with ☕ and late nights by <a href="https://github.com/your-username">@your-username</a>
-</p>
+## Subjects Progress
+
+### 📅 2026.1
+
+|SUBJECT|PROGRESS|PERCENT|
+|-|-|-|
+|DGT3285 - Introdução á programação de computadores| ████████████████░░░░| 80% |
